@@ -49,7 +49,7 @@ setTimeout(function() {
     if (sv.cheats == "1") {
         engine.misctoken[0] = "auth"
     }
-    
+
     } else {
         render.maxFPS_timer = 1000 / render.maxFPSmenu
         render.state = "game" // not optimal but quick fix
@@ -59,3 +59,6 @@ setTimeout(function() {
 // --GAME PARSER-- //
 // --MOD PARSER-- //
 // --ENGINE RENDER-- //
+for (i = 0; i < -1; i++) {
+    sleep(render.MaxFPS_timer)
+}

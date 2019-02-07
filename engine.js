@@ -1,10 +1,9 @@
-// important engine data + cvar list
 var engine = new Object()
 engine.version = String
 engine.build = String
 engine.stage = String
 engine.version = 1.0
-engine.build = 5
+engine.build = 9
 engine.stage = "Alpha"
 engine.misctoken = new Array
 engine.type = "client" // client or server or server-m, for mp. and sv. issues. server-m is for any custom player. settings that can't be adjusted by client/server
@@ -45,4 +44,4 @@ mat.matlist = "default.mat" // material type
 mat.lwmat = 0 // low-res material
 mat.wireframe = 0 // render in wire-frame
 mat.Render2D = 0 // render in 2D, overrites mod settings
-mat.VisibleWireframe // render wireframe thruough walls
+mat.VisibleWireframe = 0 // render wireframe thruough walls

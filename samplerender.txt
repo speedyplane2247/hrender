@@ -1,0 +1,26 @@
+FPS 1
+000 FPS | engine.console\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\nX New Game                                X\nX Load Game                               X\nX Options                                 X\nX Quit                                    X\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+MAP 1
+Map: xx_xxxxxx | engine.console
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X New Game                                X
+X Load Game                               X
+X Options                                 X
+X Quit                                    X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+FPS + MAP
+000 FPS | Map: xx_xxxxxx | engine.console
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X New Game                                X
+X Load Game                               X
+X Options                                 X
+X Quit                                    X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Disabled
+engine.console
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X New Game                                X
+X Load Game                               X
+X Options                                 X
+X Quit                                    X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

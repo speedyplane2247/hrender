@@ -1,25 +1,33 @@
-// render.js 
-function showFPS() {
-    // not implemented
+ // render.js 
+ function showFPS() {
+    options[0] = 1
 }
 function notshowFPS() { 
-    // requires engine restart
+    options[0] = 0
+}
+function showMAP() {
+    options[1] = 1
 }
 function notshowMAP() {
-    // requires engine restart
+    options[1] = 0
 }
-function drawFrame(map, player, health, options) {
-    // hmm.exe
+var TempRender = new Object()
+
+function drawFrame(map, player, health) {
+    TempRender = render.maxFPS_render * 1000
+    if (options[0] == 1 && options[1] == 1) {
+        console.log(TempRender + " FPS | | engine.console\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\nX                                         X\nX                                         X\nX                                         X\nX                                          \nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+    }
+    if (options[0] == 1 && options[1] == 0) {
+        console.log(TempRender + " FPS | engine.console\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\nX                                         X\nX                                         X\nX                                         X\nX                                          \nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+    }
+    if (options[1] == 0 && options[0] == 0) {
+        console.log(" | engine.console\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\nX                                         X\nX                                         X\nX                                         X\nX                                          \nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+    }
+    if (options[0] == 0 && options[1] == 0) {
+        console.log("engine.console\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\nX                                         X\nX                                         X\nX                                         X\nX                                          \nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+    } else {
+        console.log("engine.console\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\nX                                         X\nX                                         X\nX                                         X\nX                                          \nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+    }
 }
-// Used Code
-
-
-/* EXAMPLE RENDER | SOF
-000 FPS | Map: xx_xxxxxx | engine.console
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-X New Game                                X
-X Load Game                               X
-X Options                                 X
-X Quit                                    X
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-*/ // EXAMPLE RENDER | EOF
+var options = new Array()

@@ -8,3 +8,8 @@ window.onfocus = function () {
 window.onblur = function () { 
   tabActive = false; 
 }; 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  
